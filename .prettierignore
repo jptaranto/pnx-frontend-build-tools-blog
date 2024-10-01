@@ -1,0 +1,22 @@
+# Dependencies
+/node_modules
+/vendor
+/bin
+package.json
+package-lock.json
+composer.json
+composer.lock
+composer.patches.json
+.size-snapshot.json
+
+# Drupal
+/web/sites
+/web/core
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+/web/libraries
+/web/README.md
+
+# Build
+/web/storybook

@@ -1,0 +1,18 @@
+:root {
+  --card-gap: 20px;
+  --card-font-size: 18px;
+  --card-border: 1px solid #ccc;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap);
+  padding: var(--card-gap);
+  border: var(--card-border);
+}
+
+.card__title {
+  font-size: var(--card-font-size);
+  font-weight: bold;
+}
