@@ -17,8 +17,7 @@
     "http-server": "http-server web/storybook -p 6006 --silent"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "8.57.0 eslint-config-prettier eslint-config-drupal eslint-plugin-storybook",
+    "@eslint/js": "8.57.0",
     "@storybook/addon-essentials": "^8.3.4",
     "@storybook/addon-interactions": "^8.3.4",
     "@storybook/addon-links": "^8.3.4",
@@ -33,8 +32,6 @@
     "eslint": "^8.57.0",
     "eslint-config-drupal": "^5.0.2",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-storybook": "^0.9.0",
-    "eslint-plugin-unused-imports": "^4.1.4",
     "http-server": "^14.1.1",
     "postcss-preset-env": "^10.0.5",
     "prettier": "^3.3.3",

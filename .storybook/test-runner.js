@@ -1,5 +1,6 @@
 import { waitForPageReady } from '@storybook/test-runner'
 import { injectAxe, checkA11y } from 'axe-playwright'
+import { expect } from '@storybook/test'
 
 /*
  * See https://storybook.js.org/docss/writing-tests/test-runner#test-hook-api
