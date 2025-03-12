@@ -2,10 +2,6 @@ import { waitForPageReady } from '@storybook/test-runner'
 import { injectAxe, checkA11y } from 'axe-playwright'
 import { expect } from '@storybook/test'
 
-/*
- * See https://storybook.js.org/docss/writing-tests/test-runner#test-hook-api
- * to learn more about the test-runner hooks API.
- */
 const config = {
   async preVisit(page) {
     await injectAxe(page)

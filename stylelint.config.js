@@ -14,6 +14,18 @@ const config = {
     ],
     'selector-nested-pattern': '^&',
   },
+  ignoreFiles: [
+    'node_modules',
+    'vendor',
+    'bin',
+    '/app/sites',
+    '/app/core',
+    '/app/modules/contrib',
+    '/app/themes/contrib',
+    '/app/profiles/contrib',
+    '/app/libraries',
+    '/app/storybook',
+  ],
 }
 
 export default config

@@ -3,6 +3,8 @@ import { resolve } from 'path'
 import browserslist from 'browserslist-to-esbuild'
 import postcssPresetEnv from 'postcss-preset-env'
 import twig from 'vite-plugin-twig-drupal'
+import react from '@vitejs/plugin-react'
+import vue from '@vitejs/plugin-vue'
 import { globSync } from 'tinyglobby'
 
 const entry = globSync(['**/*.entry.{js,jsx}', '**/*.css'], {
@@ -26,7 +28,7 @@ export default defineConfig(({ mode }) => ({
     },
     target: browserslist(),
     cssCodeSplit: true,
-    outDir: resolve(import.meta.dirname, './web/libraries/components'),
+    outDir: resolve(import.meta.dirname, './app/libraries/components'),
     sourcemap: mode === 'development',
     rollupOptions: {
       output: {
@@ -51,5 +53,7 @@ export default defineConfig(({ mode }) => ({
         '@components': resolve(import.meta.dirname, './components'),
       },
     }),
+    react(),
+    vue(),
   ],
 }))
